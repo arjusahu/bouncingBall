@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 100px 0px 0px 70px;
+            text-shadow:1px 1px 5px black;
+            font-size: 35px;
+            color:rgb(36, 3, 3);
+        }
+        .first{
+            height:100vh;
+            width:100wh;
+            background-color:rgb(226, 156, 191);
+            position:relative;
+           
+        }
+        .second{
+            height:400px;
+            width:400px;
+             position:absolute;
+             left:50%;
+             top:70%;
+             transform:translate(-50%,-50%);
+            
+            background-color:rgb(226, 156, 191);;
+             background-size:cover;
+        }
+        ul{
+            display:flex;
+            border-bottom: 5px solid black;
+        }
+        li{
+            width:60px;
+            height:60px;
+            background-color:black;
+            list-style:none;
+            border-radius:50%;
+            box-shadow:4px 4px 10px black;
+            margin:0px 10px;
+            animation: bouncy 1s linear infinite;
+        }
+        @keyframes bouncy {
+          0%{
+             transform:translateY(0);
+          }  
+          50%{
+            transform:translateY(-200px);
+          }
+          100%{
+            transform:translateY(0);
+          }
+        }
+        li:nth-child(1){
+            animation-delay: 0.2s;
+            background-color:rgb(39, 157, 161);
+        }
+        li:nth-child(2){
+            animation-delay: 0.4s;
+            background-color:rgb(37, 31, 134);
+        }
+        li:nth-child(3){
+            animation-delay: 0.3s;
+            background-color:rgb(161, 32, 118);
+        }
+        li:nth-child(4){
+            animation-delay: 0.5s;
+            background-color:rgb(21, 153, 54);
+        }
+        li:nth-child(5){
+            animation-delay: 0.3s;
+            background-color:rgb(196, 137, 28);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="first">
+    <div class="second">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    <h1>BOUNCING BALL</h1>
+    </div>
+    </div>
+</body>
+</html>

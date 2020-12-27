@@ -10,9 +10,17 @@
             padding:0px;
             box-sizing:border-box;
         }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 20px 0px 0px 0px;
+            text-shadow:1px 1px 5px black;
+            font-size: 18px;
+            color:rgb(36, 3, 3);
+
+        }
         h1{
             font-family:Arial, Helvetica, sans-serif;
-            padding: 100px 0px 0px 70px;
+            padding: 100px 0px 0px 60px;
             text-shadow:1px 1px 5px black;
             font-size: 35px;
             color:rgb(36, 3, 3);
@@ -48,6 +56,7 @@
             box-shadow:4px 4px 10px black;
             margin:0px 10px;
             animation: bouncy 1s linear infinite;
+            transition: border-radius .2s ;
         }
         @keyframes bouncy {
           0%{
@@ -81,7 +90,12 @@
             background-color:rgb(196, 137, 28);
         }
 
-
+         li:hover{
+             /* border-radius:0%; */
+             background-color:black;
+             border-radius: 0%;
+             /* transform:scale(2); */
+                     }
 
     </style>
 </head>
@@ -96,6 +110,7 @@
             <li></li>
         </ul>
     <h1>BOUNCING BALL</h1>
+    <p>Bring your mouse over the balls to see the effect.</p>
     </div>
     </div>
 </body>
